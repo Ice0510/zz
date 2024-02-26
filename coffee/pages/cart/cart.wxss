@@ -1,0 +1,106 @@
+.cart {
+  width: 750rpx;
+  height: 100vh;
+  background-color: #F5F6F8;
+}
+.cart .shpo-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid #F4F4F4;
+  background-color: #ffffff;
+}
+.cart .shpo-item .left {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20rpx;
+}
+.cart .shpo-item .card {
+  position: relative;
+  flex: 9;
+}
+.cart .shpo-item .card .aaa {
+  height: 80rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.cart .shpo-item .card .num {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 20rpx;
+  right: 6rpx;
+  width: 160rpx;
+  height: 60rpx;
+}
+.cart .shpo-item .card .num .icon {
+  color: #595758;
+  font-weight: bold;
+}
+.cart .shpo-item .card .num .text {
+  display: inline-block;
+  width: 80rpx;
+  height: 40rpx;
+  text-align: center;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  background: rgba(119, 136, 153, 0.1);
+  margin: 0 10rpx;
+}
+.cart .kong_cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 750rpx;
+  height: 500rpx;
+}
+.cart .kong_cart image {
+  width: 500rpx;
+  height: 460rpx;
+}
+.cart .footer_tools {
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  height: 90rpx;
+  padding-left: 20rpx;
+  border-top: 1px solid #F8F8F8;
+  background-color: #FEFEFE;
+}
+.cart .footer_tools .all_check {
+  flex: 2;
+}
+.cart .footer_tools .total_price {
+  text-align: right;
+  flex: 3;
+  margin-right: 20rpx;
+}
+.cart .footer_tools .total_price .total {
+  font-weight: bold;
+  font-size: 32rpx;
+}
+.cart .footer_tools .total_price .total text {
+  color: #FA381F;
+}
+.cart .footer_tools .total_price .yf {
+  font-size: 28rpx;
+}
+.cart .footer_tools .pay {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  font-size: 36rpx;
+  margin-right: 24rpx;
+  color: white;
+  border-radius: 50rpx;
+  background-image: linear-gradient(to right, #363636, #1F1F1F);
+}

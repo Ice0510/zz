@@ -1,0 +1,74 @@
+.pay {
+  width: 750rpx;
+}
+.pay .shpo-item {
+  width: 100%;
+  border-top: 1px solid #F4F4F4;
+}
+.pay .shpo-item .card .aaa {
+  height: 80rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.pay .wrapper {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80%;
+  height: 400rpx;
+  background-color: white;
+  transform: translate(-50%, -50%);
+  border-radius: 36rpx;
+}
+.pay .wrapper .title {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15rpx;
+}
+.pay .wrapper .money {
+  font-size: 42rpx;
+  font-weight: bold;
+}
+.pay .wrapper .fs {
+  width: 80%;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2rpx solid #E0E0E0;
+  border-bottom: 2rpx solid #E0E0E0;
+  margin: 15rpx 0;
+}
+.pay .wrapper .fs .right {
+  display: flex;
+  align-items: center;
+}
+.pay .wrapper .fs .right .ye {
+  color: #D5D5D5;
+}
+.pay .wrapper .fs .right image {
+  width: 50rpx;
+  height: 50rpx;
+}
+.pay .wrapper .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  width: 280rpx;
+  height: 100rpx;
+  border-radius: 32rpx;
+  background-color: #07C160;
+  margin-top: 10rpx;
+}
+.pay .youhuijuan {
+  margin-left: 30rpx;
+  color: #1989FA;
+}

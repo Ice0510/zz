@@ -1,0 +1,115 @@
+<view class="index">
+  <van-search
+    value="{{ value }}"
+    shape="round"
+    background="#ffffff"
+    placeholder="点击搜索"
+    disabled
+    bind:tap="goSearch"
+  />
+  <van-notice-bar
+    color="#2336AE"
+    background="#F2F5FC"
+    left-icon="volume-o"
+    text="{{msg}}"
+  />
+  <view class="lunbo">
+    <swiper
+      circular
+      autoplay
+      interval="3600"
+      indicator-dots
+      indicator-active-color="#ffffff"
+    >
+      <swiper-item class="swiper_item">
+        <image src="../../images/1.jpg"></image>
+      </swiper-item>
+      <swiper-item bindtap="goLuck">
+        <image src="../../images/2.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../images/3.jpg"></image>
+      </swiper-item>
+      <swiper-item>
+        <image src="../../images/4.jpg"></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="title1">猜你喜欢：</view>
+  <view class="zhengzai">
+    <view class="con">
+      <scroll-view
+        scroll-x
+        class="fq_shop"
+        enable-flex="true"
+      >
+        <view
+          class="item"
+          wx:for="{{reArr}}"
+          wx:key="this"
+          bind:tap="goDetail"
+          data-obj="{{item}}"
+        >
+          <view class="img">
+            <image src="{{item.img}}" />
+          </view>
+          <view class="title">{{item.title}}</view>
+          <view class="btns">
+            <view class="money">{{item.money}}</view>
+            <view
+              class="btn"
+              data-item="{{item}}"
+              catch:tap="addCart"
+            >
+              <van-icon
+                name="cart-o"
+                size="15px"
+                color="#ffffff"
+              />
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </view>
+
+  </view>
+  <view class="fw">
+    <view class="title1">疯狂抢购：</view>
+    <view class="conent">
+      <view
+        class="conent-item"
+        wx:for="{{dataList}}"
+        wx:key="this"
+        bind:tap="goDetail"
+        data-obj="{{item}}"
+      >
+        <view class="img">
+          <image src="{{item.img}}" />
+        </view>
+        <view class="left">
+          <view class="title">{{item.title}}</view>
+          <view class="jianjie">原料：{{item.yuanliao}}</view>
+          <view class="biaoqian">
+            <view>
+              <text>￥: {{item.money}}</text>
+            </view>
+          </view>
+        </view>
+        <view class="right">
+          <view
+            class="btn"
+            data-item="{{item}}"
+            catch:tap="addCart"
+          >
+            <van-icon
+              name="cart-o"
+              size="15px"
+              color="#ffffff"
+            />
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+

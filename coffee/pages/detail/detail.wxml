@@ -1,0 +1,75 @@
+<view class="detail">
+  <view class="img">
+    <image src="{{obj.img}}" />
+  </view>
+  <view class="content">
+    <view class="title">{{obj.title}}</view>
+    <view class="text">原料：{{obj.yuanliao}}</view>
+    <view class="star">
+      <view class="left">收藏：</view>
+      <view class="img">
+        <image
+          wx:if="{{!is_active}}"
+          bind:tap="addStar"
+          src="../../images/icons/star.png"
+        />
+        <image
+          wx:if="{{is_active}}"
+          bind:tap="delStar"
+          src="../../images/icons/star_color.png"
+        />
+      </view>
+    </view>
+    <view class="pinglun" bind:tap="goPinglun">
+      <view class="title">已买评价</view>
+      <view class="right">
+        <view class="text">{{pinglunNum}}条</view>
+        <image src="../../images/right.png" />
+      </view>
+    </view>
+  </view>
+  <!-- 更多推荐 -->
+  <view class="fw">
+    <view class="title">更多推荐</view>
+    <view class="conent">
+      <view
+        class="conent-item"
+        wx:for="{{dataList}}"
+        wx:key="this"
+        bind:tap="goDetail"
+        data-obj="{{item}}"
+      >
+        <view class="img">
+          <image src="{{item.img}}" />
+        </view>
+        <view class="left">
+          <view class="title2">{{item.title}}</view>
+          <view class="jianjie">原料：{{item.yuanliao}}</view>
+          <view class="biaoqian">
+            <view>
+              <text>￥: {{item.money}}</text>
+            </view>
+          </view>
+        </view>
+        <view class="right">
+          <view
+            class="btn2"
+            data-item="{{item}}"
+            catch:tap="addCart"
+          >
+            <van-icon
+              name="cart-o"
+              size="15px"
+              color="#ffffff"
+            />
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class="btn">
+    <view class="btn-item1" bind:tap="addCart">加入购物车</view>
+    <view class="btn-item2" bindtap="gmCart">立即购买</view>
+  </view>
+</view>
+

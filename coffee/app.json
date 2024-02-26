@@ -1,0 +1,60 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/login/login",
+    "pages/shouquan/shouquan",
+    "pages/luck_draw/luck_draw",
+    "pages/dingdan/dingdan",
+    "pages/my_luck/my_luck",
+    "pages/zuce/zuce",
+    "pages/pinglun/pinglun",
+    "pages/add_pinglun/add_pinglun",
+    "pages/my/my",
+    "pages/star/star",
+    "pages/cart/cart",
+    "pages/lx/lx",
+    "pages/pay/pay",
+    "pages/search/search",
+    "pages/set/set",
+    "pages/detail/detail",
+    "pages/fenlei/fenlei"
+  ],
+  "permission":{
+    "scope.userLocation":{
+      "desc":"请点击确定"
+    }
+  },
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "咖啡点单",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor":"#1F1F1F",
+    "color":"#cfcfcf",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "iconPath": "images/icons/index.png",
+      "selectedIconPath": "images/icons/index_color.png",
+      "text": "首页"
+    }, {
+      "pagePath": "pages/fenlei/fenlei",
+      "iconPath": "images/icons/fenlei.png",
+      "selectedIconPath": "images/icons/fenlei_color.png",
+      "text": "分类"
+    },{
+      "pagePath": "pages/cart/cart",
+      "iconPath": "images/icons/cart.png",
+      "selectedIconPath": "images/icons/cart_color.png",
+      "text": "购物车"
+    }, {
+      "pagePath": "pages/my/my",
+      "iconPath": "images/icons/my.png",
+      "selectedIconPath": "images/icons/my_color.png",
+      "text": "我的"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

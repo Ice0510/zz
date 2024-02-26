@@ -1,0 +1,30 @@
+<view class="remark">
+  <view class="re-left">
+    <text class="red">*</text>
+    评分
+  </view>
+  <van-rate
+    color="#FBBD08"
+    value="{{ star }}"
+    bind:change="onChange"
+  />
+</view>
+
+<view class="remark">
+  <view class="re-left">
+    <text class="red">*</text>
+    评价
+  </view>
+  <view class="re-right">
+    <textarea
+      value="{{msg}}"
+      bindinput="getMsgInput"
+      class="textarea"
+      placeholder="请填写评价"
+      placeholderStyle="color:#6a6a6a;"
+    ></textarea>
+  </view>
+</view>
+
+<view class="btn" bind:tap="star">提 交</view>
+

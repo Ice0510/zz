@@ -1,0 +1,188 @@
+.index {
+  width: 750rpx;
+  background-color: #EDEDED;
+}
+.index .lunbo {
+  width: 750rpx;
+  height: 400rpx;
+  background-color: white;
+  overflow: hidden;
+}
+.index .lunbo swiper {
+  width: 670rpx;
+  height: 350rpx;
+  margin: 20rpx 40rpx;
+  border-radius: 40rpx;
+  overflow: hidden;
+}
+.index .lunbo swiper image {
+  width: 100%;
+  height: 100%;
+}
+.index .title1 {
+  display: flex;
+  align-items: center;
+  height: 90rpx;
+  margin-left: 30rpx;
+  font-weight: bold;
+}
+.index .zhengzai {
+  width: 750rpx;
+  background-color: #EDEDED;
+  overflow: hidden;
+}
+.index .zhengzai .con {
+  width: 710rpx;
+  height: 360rpx;
+  margin-left: 20rpx;
+  margin-top: 20rpx;
+  border-radius: 20rpx;
+  background-color: white;
+}
+.index .zhengzai .con .title {
+  height: 90rpx;
+  font-weight: bold;
+  color: #343434;
+}
+.index .zhengzai .con .fq_shop {
+  display: flex;
+  width: 100%;
+  height: 410rpx;
+}
+.index .zhengzai .con .fq_shop .item {
+  display: flex;
+  flex-direction: column;
+  font-size: 32rpx;
+  margin: 15rpx 10rpx;
+}
+.index .zhengzai .con .fq_shop .item .img {
+  width: 240rpx;
+  height: 180rpx;
+}
+.index .zhengzai .con .fq_shop .item .img image {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+}
+.index .zhengzai .con .fq_shop .item .title {
+  height: 40rpx;
+  margin: 15rpx 0;
+  font-size: 32rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.index .zhengzai .con .fq_shop .item .btns {
+  width: 200rpx;
+  height: 80rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 20rpx;
+}
+.index .zhengzai .con .fq_shop .item .btns .money {
+  color: red;
+  font-weight: bold;
+}
+.index .zhengzai .con .fq_shop .item .btns .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70rpx;
+  height: 70rpx;
+  font-size: 32rpx;
+  color: white;
+  border-radius: 100000rpx;
+  background-color: #1F1F1F;
+}
+.index .fw {
+  background-color: #EDEDED;
+  width: 750rpx;
+}
+.index .fw .conent {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 710rpx;
+  margin-left: 20rpx;
+}
+.index .fw .conent .conent-item {
+  display: flex;
+  width: 710rpx;
+  height: 220rpx;
+  margin-bottom: 20rpx;
+  background-color: white;
+  border-radius: 20rpx;
+}
+.index .fw .conent .conent-item .img {
+  width: 240rpx;
+  height: 180rpx;
+  align-self: center;
+  margin-left: 20rpx;
+}
+.index .fw .conent .conent-item .img image {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+}
+.index .fw .conent .conent-item .left {
+  width: 320rpx;
+  height: 260rpx;
+  font-size: 32rpx;
+  margin-left: 30rpx;
+}
+.index .fw .conent .conent-item .left .title {
+  margin-top: 25rpx;
+  margin-bottom: 15rpx;
+  font-weight: bold;
+  height: 40rpx;
+  font-size: 32rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+.index .fw .conent .conent-item .left .jianjie {
+  width: 330rpx;
+  height: 80rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.index .fw .conent .conent-item .left .biaoqian {
+  display: flex;
+  align-items: center;
+  color: red;
+  font-weight: bold;
+}
+.index .fw .conent .conent-item .left .biaoqian .a {
+  margin-right: 20rpx;
+}
+.index .fw .conent .conent-item .right {
+  height: 210rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 20rpx;
+}
+.index .fw .conent .conent-item .right .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70rpx;
+  height: 70rpx;
+  font-size: 32rpx;
+  color: white;
+  border-radius: 100000rpx;
+  background-color: #1F1F1F;
+}
+.index .fw .conent .conent-item .item-title {
+  margin: 20rpx 0rpx 0rpx 30rpx;
+  line-height: 80rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}

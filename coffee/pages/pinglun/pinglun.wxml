@@ -1,0 +1,38 @@
+<view class="pinglun">
+  <view class="conent">
+    <view class="img">
+      <image src="{{obj.img}}" />
+    </view>
+    <view class="right">
+      <view class="title">{{obj.title}}</view>
+      <view class="money">￥ {{obj.money}}</view>
+    </view>
+  </view>
+  <view class="wu" wx:if="{{dataList.length==0}}">暂无用户评价~</view>
+  <view class="ping" wx:if="{{dataList.length>0}}">
+    <view class="title">{{dataList.length}}条评价</view>
+    <view
+      class="item"
+      wx:for="{{dataList}}"
+      wx:key="this"
+    >
+      <image src="{{item.name_img}}" />
+      <view class="left">
+        <view class="name">{{item.nickName}}</view>
+        <view class="msg">{{item.msg}}</view>
+      </view>
+      <view class="right">
+        <view class="star">
+          <van-rate
+            readonly
+            color="#FBBD08"
+            value="{{ item.star }}"
+            icon-class="icon"
+          />
+        </view>
+        <view class="shijian">{{item.shijian}}</view>
+      </view>
+    </view>
+  </view>
+</view>
+

@@ -1,0 +1,22 @@
+<view class="my_luck">
+  <view class="con">
+    <view
+      class="item"
+      wx:for="{{dataList}}"
+      wx:key="this"
+    >
+      <view class="left">
+        <view class="title">{{item.msg}}</view>
+        <view class="shijian">{{item.shijian}}</view>
+      </view>
+      <view
+        class="right"
+        data-item="{{item}}"
+        bind:tap="luck"
+      >使用
+      </view>
+    </view>
+  </view>
+  <view class="kong" wx:if="{{dataList.length==0}}">暂无数据~</view>
+</view>
+

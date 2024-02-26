@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "van-icon": "@vant/weapp/icon/index",
+    "van-button":"@vant/weapp/button/index",
+    "van-field": "@vant/weapp/field/index"
+  },
+  "navigationBarTitleText": " 注册",
+  "navigationBarBackgroundColor": "#1f1f1f",
+  "navigationBarTextStyle":"white"
+}

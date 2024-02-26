@@ -1,0 +1,49 @@
+<view class="pay">
+  <view
+    class="shpo-item"
+    wx:for="{{cartArr}}"
+    wx:key="*this"
+  >
+
+    <view class="card">
+      <van-card
+        price="{{item.money}}"
+        num="{{item.shopNum}}"
+        title="{{item.title}}"
+        thumb="{{ item.img }}"
+        data-item="{{item}}"
+        bind:tap="goDetail"
+        title-class="aaa"
+      />
+
+    </view>
+  </view>
+  <van-submit-bar
+    price="{{ heji*100 }}"
+    button-text="提交订单"
+    bind:submit="onClickShow"
+  >
+
+    <!-- <van-tag type="primary">标签</van-tag> -->
+    <view slot="tip">
+      <text class="youhuijuan" wx:if="{{!youhuijuan}}" bind:tap="goLuck">优惠券</text>
+      <text class="youhuijuan" wx:if="{{youhuijuan}}" bind:tap="goLuck">{{youhui}}</text>
+    </view>
+  </van-submit-bar>
+
+  <van-overlay show="{{ show }}" bind:click="onClickHide">
+    <view class="wrapper" catch:tap="noop">
+      <view class="title">微信支付</view>
+      <view class="money">￥：{{heji}}</view>
+      <view class="fs">
+        <view class="text">支付方式</view>
+        <view class="right">
+          <view class="ye">余额</view>
+          <image src="../../images/right.png" />
+        </view>
+      </view>
+      <view class="btn" catch:tap="addPay">确认支付</view>
+    </view>
+  </van-overlay>
+</view>
+

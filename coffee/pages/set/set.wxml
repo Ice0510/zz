@@ -1,0 +1,5 @@
+<view class="btn">
+  <!-- <view class="btn-cent" bind:tap="goPerson">个人信息</view> -->
+  <view class="btn-cent btn2" bind:tap="tuichu">退出登录</view>
+</view>
+

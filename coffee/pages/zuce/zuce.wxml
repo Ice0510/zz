@@ -1,0 +1,51 @@
+<view class="login">
+  <view class="container">
+    <view class="top">
+      <view class="input">
+        <van-icon
+          slot="left-icon"
+          size="21px"
+          name="contact"
+          class="icon"
+        />
+        <!-- <van-cell-group> -->
+        <input bindinput="getUser" placeholder="用户名(手机号)" />
+        <!-- </van-cell-group> -->
+      </view>
+      <!-- 密码 -->
+      <view class="input">
+        <van-icon
+          slot="left-icon"
+          size="21px"
+          name="bag-o"
+          class="icon"
+        />
+        <!-- <van-cell-group> -->
+        <input
+          type="password"
+          bindinput="getPaw"
+          placeholder="请输入密码"
+        />
+        <!-- </van-cell-group> -->
+      </view>
+      <view class="input">
+        <van-icon
+          slot="left-icon"
+          size="21px"
+          name="goods-collect-o"
+          class="icon"
+        />
+        <!-- <van-cell-group> -->
+        <input
+          type="password"
+          bindinput="getPaws"
+          placeholder="请重复输入密码"
+        />
+        <!-- </van-cell-group> -->
+      </view>
+    </view>
+    <view class="singin" bind:tap="goLogin">直接登录</view>
+    <view class="btn" bind:tap="login">注 册</view>
+  </view>
+</view>
+

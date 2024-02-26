@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "van-button": "@vant/weapp/button/index",
+    "van-field": "@vant/weapp/field/index",
+    "van-cell": "@vant/weapp/cell/index",
+    "van-calendar": "@vant/weapp/calendar/index",
+    "van-radio": "@vant/weapp/radio/index",
+  "van-radio-group": "@vant/weapp/radio-group/index"
+  },
+  "navigationBarTitleText": "修改信息"
+}

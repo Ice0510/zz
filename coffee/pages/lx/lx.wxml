@@ -1,0 +1,61 @@
+<view class="banner">
+  <view class="login">
+    <view class="no_login">
+      <image src="{{img}}" />
+    </view>
+    <view class="btn"></view>
+  </view>
+</view>
+
+<view class="container">
+  <view class="top">
+    <!-- 姓名 -->
+    <view class="item">
+      <view class="title">姓名：</view>
+      <view class="input">
+        <!-- <van-cell-group> -->
+        <input bindinput="getNama" value="{{xingming}}" />
+        <!-- </van-cell-group> -->
+      </view>
+    </view>
+    <view class="item">
+      <view class="title">密码：</view>
+      <view class="input">
+        <!-- <van-cell-group> -->
+        <input bindinput="getPaw" value="{{paw}}" />
+        <!-- </van-cell-group> -->
+      </view>
+    </view>
+
+    <view class="item">
+      <view class="title">手机号：</view>
+      <view class="input">
+        <!-- <van-cell-group> -->
+        <input value="{{tel}}" disabled="{{true}}" />
+        <!-- </van-cell-group> -->
+      </view>
+    </view>
+    <view class="title">性别：</view>
+    <van-radio-group
+      custom-class="a"
+      value="{{ radio }}"
+      bind:change="onChangeRadio"
+    >
+      <van-radio
+        checked-color="#D53034"
+        custom-class="r"
+        name="0"
+      >男
+      </van-radio>
+      <van-radio
+        checked-color="#D53034"
+        custom-class="r"
+        name="1"
+      >女
+      </van-radio>
+
+    </van-radio-group>
+  </view>
+  <view class="btn" bind:tap="updateUser">保 存</view>
+</view>
+

@@ -1,0 +1,20 @@
+<view id="luckdraw_box">
+  <view id="luckdraw_back">
+    <image
+      style='transform:rotate({{ change_angle}}deg)'
+      mode="scaleToFill"
+      src="/images/bg.jpg"
+    ></image>
+  </view>
+  <view id="luckdraw_pointer" bindtap='luckDrawStart'>
+    <image mode="scaleToFill" src="/images/icon.jpg"></image>
+  </view>
+</view>
+<view class="num">还有{{available_num}}次抽奖机会！</view>
+<view class="shuoming">
+  <view class="title">中奖说明:</view>
+  <view class="text">一等奖：15元优惠券</view>
+  <view class="text">二等奖：10元优惠券</view>
+  <view class="text">三等奖：5元优惠券</view>
+</view>
+

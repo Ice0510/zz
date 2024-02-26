@@ -1,0 +1,186 @@
+{
+  "setting": {},
+  "condition": {  
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/add/add",
+          "pathName": "pages/add/add",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/tuichu/tuichu",
+          "pathName": "pages/tuichu/tuichu",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/wenzhang1/wenzhang1",
+          "pathName": "pages/wenzhang1/wenzhang1",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/fuwujilu/fuwujilu",
+          "pathName": "pages/fuwujilu/fuwujilu",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/qr/qr",
+          "pathName": "pages/qr/qr",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/fenlei/fenlei",
+          "pathName": "pages/fenlei/fenlei",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/my/my",
+          "pathName": "pages/my/my",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/admin/admin",
+          "pathName": "pages/admin/admin",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/add/add",
+          "pathName": "pages/add/add",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/search/search",
+          "pathName": "pages/search/search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/my/my",
+          "pathName": "pages/my/my",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/lx/lx",
+          "pathName": "pages/lx/lx",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/my/my",
+          "pathName": "pages/my/my",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/fenlei/fenlei",
+          "pathName": "pages/fenlei/fenlei",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/cart/cart",
+          "pathName": "pages/cart/cart",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/login/login",
+          "pathName": "pages/login/login",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/fenlei/fenlei",
+          "pathName": "pages/fenlei/fenlei",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/dingdan/dingdan",
+          "pathName": "pages/dingdan/dingdan",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/my/my",
+          "pathName": "pages/my/my",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "pages/add/add",
+          "pathName": "pages/add/add",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/pay/pay",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/dingdan/dingdan",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/luck_draw/luck_draw",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/luck_draw/luck_draw",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/my_luck/my_luck",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/pay/pay",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

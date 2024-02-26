@@ -1,0 +1,41 @@
+<view class="my">
+  <view class="banner">
+    <view class="login">
+      <view class="no_login">
+        <image src="{{img}}" />
+      </view>
+      <view class="btn">{{name}}</view>
+    </view>
+  </view>
+  <view class="tab">
+    <view class="tab-item" bind:tap="goMyDingdan">
+      <view class="left">
+        <image src="../../images/002.png" />
+        <view class="text">我的订单</view>
+      </view>
+      <image src="../../images/right.png" />
+    </view>
+    <view class="tab-item" bind:tap="goMyStar">
+      <view class="left">
+        <image src="../../images/icons/star.png" />
+        <view class="text">我的收藏</view>
+      </view>
+      <image src="../../images/right.png" />
+    </view>
+    <view class="tab-item" bind:tap="goMyLuck">
+      <view class="left">
+        <image src="../../images/luck.png" />
+        <view class="text">我的优惠</view>
+      </view>
+      <image src="../../images/right.png" />
+    </view>
+    <view class="tab-item" bind:tap="gSet">
+      <view class="left">
+        <image src="../../images/004.png" />
+        <view class="text">设置</view>
+      </view>
+      <image src="../../images/right.png" />
+    </view>
+  </view>
+</view>
+

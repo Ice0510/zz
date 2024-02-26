@@ -1,0 +1,72 @@
+<view class="cart">
+  <view
+    class="shpo-item"
+    wx:for="{{cartArr}}"
+    wx:key="this"
+    wx:if="{{!cartArr.length==0}}"
+  >
+    <checkbox-group
+      class="left"
+      data-id="{{item.goods_id}}"
+      bindchange="checkedChange"
+    >
+      <checkbox checked="{{item.check}}" color="#FA381F">
+      </checkbox>
+    </checkbox-group>
+    <view class="card">
+      <van-card
+        wx:key="this"
+        price="{{item.money}}"
+        title="{{item.title}}"
+        thumb="{{ item.img }}"
+        data-item="{{item}}"
+        bind:tap="goDetail"
+        title-class="aaa"
+      />
+      <view class="num">
+        <text class="icon" data-id="{{item.goods_id}}" data-operation="{{-1}}" bind:tap="operationGoods">-</text>
+        <text class="text">{{item.shopNum}}</text>
+        <text class="icon" data-id="{{item.goods_id}}" data-operation="{{1}}" bind:tap="operationGoods">+</text>
+      </view>
+    </view>
+  </view>
+  <view class="kong_cart" wx:if="{{cartArr.length==0}}">
+    <image src="../../images/kong_cart.png" />
+  </view>
+  <!--底部工具栏-->
+  <view class="footer_tools">
+    <!--全选-->
+    <view class="all_check">
+      <checkbox-group bindchange="allCheckedChange">
+        <checkbox checked="{{allCheck}}" color="#FA381F">全选</checkbox>
+      </checkbox-group>
+    </view>
+    <!--合计-->
+    <view class="total_price">
+      <view class="total">合计：
+        <text>￥{{totalPrice}}</text>
+      </view>
+      <!-- <view class="yf">包含运费</view> -->
+    </view>
+    <!--结算-->
+    <view class="pay" bind:tap="handlePay">提交({{totalNum}})</view>
+  </view>
+  <!-- <van-submit-bar
+	 price="{{ total }}"
+	 button-text="提交"
+	 bind:submit="onClickButton"
+	 bar-class="jg"
+	 button-class="an"
+	>
+		<van-tag class="qx" type="primary">
+			<checkbox-group class="left" bindchange="allCheckedChange">
+				<checkbox checked="{{allCheck}}" color="#FA381F">
+				</checkbox>
+			</checkbox-group>
+			<text class="text">全选</text>
+		</van-tag>
+
+    </van-submit-bar> -->
+
+</view>
+

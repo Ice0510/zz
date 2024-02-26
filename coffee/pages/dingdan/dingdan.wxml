@@ -1,0 +1,89 @@
+<view class="dingdan">
+  <van-tabs active="{{ active }}" bind:change="onChange">
+    <van-tab title="待出餐">
+      <view class="content">
+        <view
+          class="item"
+          wx:for="{{dataList}}"
+          wx:key="this"
+          data-index="{{index}}"
+        >
+          <view class="img">
+            <image src="{{item.img}}" />
+          </view>
+          <view class="right">
+            <view class="title">{{item.title}}</view>
+            <view class="num">取餐码：{{item.bianhao}}</view>
+            <view class="text">
+              <view class="money">￥:{{item.money}}</view>
+            </view>
+          </view>
+          <view
+            class="pingjia"
+            bind:tap="del"
+            data-id="{{item.dingdan_id}}"
+          >取消订单
+          </view>
+        </view>
+      </view>
+    </van-tab>
+    <van-tab title="待确认">
+      <view class="content">
+        <view
+          class="item"
+          wx:for="{{dataList}}"
+          wx:key="this"
+          data-index="{{index}}"
+        >
+          <view class="img">
+            <image src="{{item.img}}" />
+          </view>
+          <view class="right">
+            <view class="title">{{item.title}}</view>
+            <view class="num">取餐码：{{item.bianhao}}</view>
+            <view class="text">
+              <view class="money">￥:{{item.money}}</view>
+            </view>
+          </view>
+          <view
+            class="pingjia"
+            bind:tap="addQueren"
+            data-id="{{item.dingdan_id}}"
+          >确认取餐
+          </view>
+        </view>
+      </view>
+    </van-tab>
+    <van-tab title="待评价">
+      <view class="content">
+        <view
+          class="item"
+          wx:for="{{dataList}}"
+          wx:key="this"
+          data-index="{{index}}"
+        >
+          <view class="img">
+            <image src="{{item.img}}" />
+          </view>
+          <view class="right">
+            <view class="title">{{item.title}}</view>
+            <view class="num">取餐码：{{item.codeNum}}</view>
+            <view class="text">
+              <view class="money">￥:{{item.money}}</view>
+            </view>
+          </view>
+          <view
+            class="pingjia"
+            bind:tap="pingjia"
+            wx:if="{{item.active==0}}"
+            data-obj="{{item}}"
+          >评 价
+          </view>
+          <view class="pingjia" wx:if="{{item.active==1}}">已评价</view>
+        </view>
+      </view>
+    </van-tab>
+  </van-tabs>
+  <view class="kong" wx:if="{{dataList.length==0}}">暂无数据~</view>
+</view>
+
